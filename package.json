@@ -1,0 +1,64 @@
+{
+  "name": "react-webpack-template",
+  "version": "1.0.0",
+  "description": "React template with Webpack and Babel",
+  "main": "app",
+  "scripts": {
+    "start": "webpack serve --hot --config webpack/webpack.dev.js",
+    "start:production": "webpack serve --hot --config webpack/webpack.prod.js",
+    "build:clean": "rimraf ./build",
+    "prebuild": "npm run build:clean",
+    "build": "webpack --color --progress --config webpack/webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalika123900-company/react-webpack-template.git"
+  },
+  "keywords": [],
+  "author": "Vikrant Singh <vikrant.mongoosetech@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kalika123900-company/react-webpack-template/issues"
+  },
+  "homepage": "https://github.com/kalika123900-company/react-webpack-template#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "crypto-js": "^4.1.1",
+    "i18next": "^19.8.4",
+    "i18next-browser-languagedetector": "^6.0.1",
+    "immutable": "^4.0.0-rc.14",
+    "moment": "^2.29.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-cookie": "^4.0.3",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-i18next": "^11.8.5",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.0",
+    "redux-immutable": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-proposal-export-default-from": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.9",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "buffer": "^6.0.3",
+    "compression-webpack-plugin": "^7.1.2",
+    "crypto-browserify": "^3.12.0",
+    "css-loader": "^5.2.7",
+    "dotenv": "^8.6.0",
+    "html-webpack-plugin": "^5.3.2",
+    "stream-browserify": "^3.0.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.47.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  }
+}
